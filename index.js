@@ -11,8 +11,6 @@ client.on('ready', (guild) => {
 
 });
 
-
-
 client.on('message', message => {
 	
 	const list = client.guilds.get(""); //INSERT SERVER ID 
